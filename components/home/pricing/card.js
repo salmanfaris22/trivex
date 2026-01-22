@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 export default function TeamCard({ member = {} }) {
@@ -6,11 +7,17 @@ export default function TeamCard({ member = {} }) {
 		<div className="w-full min-h-96 px-5 py-10 border-2 border-base-content rounded-xl flex flex-col items-center gap-4 transition-all duration-200 shadow-none hover:shadow-2xl bg-base-100">
 			
 			{/* Profile Image */}
-			<img
+			{/* <img
 				src={member.image || '/placeholder.jpg'}
 				alt={member.name}
 				className="w-32 h-32 rounded-full object-cover border-2 border-base-content"
-			/>
+			/> */}
+
+			<Image
+														src={member.image || '/placeholder.jpg'}
+				alt={member.name}
+				className="w-32 h-32 rounded-full object-cover border-2 border-base-content"
+									></Image>
 
 			{/* Name */}
 			<h2 className="text-xl font-bold text-center">
