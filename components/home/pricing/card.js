@@ -1,37 +1,70 @@
 'use client';
-import { FaCheck } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
-export default function PricingCard({ pricingItem = {} }) {
+export default function TeamCard({ member = {} }) {
 	return (
-		<div className={`w-full min-h-96 px-5 py-10 border-2 border-base-content rounded-xl flex flex-col items-center gap-2 transition-all duration-100 shadow-none hover:shadow-2xl bg-base-100 ${pricingItem.recommend && 'md:scale-125'}`}>
-			<h2 className='text-xl font-bold text-center'>{pricingItem.title}</h2>
-			<p className='text-center'>{pricingItem.description}</p>
-			<div className='text-4xl font-bold text-center py-5 bg-gradient-to-r from-base-content from-0% to-[#9c9c9c] md:text-center bg-clip-text text-transparent'>
-				{pricingItem.price}/{pricingItem.duration}
+		<div className="w-full min-h-96 px-5 py-10 border-2 border-base-content rounded-xl flex flex-col items-center gap-4 transition-all duration-200 shadow-none hover:shadow-2xl bg-base-100">
+			
+			{/* Profile Image */}
+			<img
+				src={member.image || '/placeholder.jpg'}
+				alt={member.name}
+				className="w-32 h-32 rounded-full object-cover border-2 border-base-content"
+			/>
+
+			{/* Name */}
+			<h2 className="text-xl font-bold text-center">
+				{member.name}
+			</h2>
+
+			{/* Position */}
+			<p className="text-center text-sm opacity-80">
+				{member.position}
+			</p>
+
+			{/* About / Short Bio */}
+			{member.description && (
+				<p className="text-center text-sm mt-2">
+					{member.description}
+				</p>
+			)}
+
+			{/* Social Links */}
+			<div className="flex gap-4 mt-4">
+				{member.linkedin && (
+					<a
+						href={member.linkedin}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="LinkedIn"
+						className="text-xl hover:text-primary transition"
+					>
+						<FaLinkedin />
+					</a>
+				)}
+
+				{member.instagram && (
+					<a
+						href={member.instagram}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Instagram"
+						className="text-xl hover:text-primary transition"
+					>
+						<FaInstagram />
+					</a>
+				)}
+
+				{member.contact && (
+					<a
+						href={`mailto:${member.contact}`}
+						aria-label="Contact"
+						className="text-xl hover:text-primary transition"
+					>
+						<FaEnvelope />
+					</a>
+				)}
 			</div>
-
-			<ul className='w-full flex flex-col gap-2 py-5'>
-				{pricingItem.features &&
-					pricingItem.features.map((feature, Featureindex) => {
-						return (
-							<li
-								className='flex items-center gap-2'
-								key={Featureindex}
-							>
-								<FaCheck /> {feature}
-							</li>
-						);
-					})}
-			</ul>
-
-			<a
-				aria-label='choose plan'
-				title='choose plan'
-				href='#'
-				className='btn btn-wide bg-base-content text-base-100 hover:bg-base-100 hover:text-base-content rounded-full'
-			>
-				Choose Plan
-			</a>
 		</div>
 	);
 }

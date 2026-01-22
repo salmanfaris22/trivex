@@ -1,8 +1,9 @@
 'use client';
-import PricingCard from './pricing/card';
+
 import { PricingList } from '@/lib/pricingList';
 import { motion } from 'framer-motion';
 import { IoMdPricetags } from 'react-icons/io';
+import TeamCard from './pricing/card';
 
 export default function Feature({ locale, langName = 'en' }) {
 	let list = PricingList[`PRICING_${langName.toUpperCase()}`] || [];
@@ -42,16 +43,15 @@ export default function Feature({ locale, langName = 'en' }) {
 					duration: 0.5,
 				}}
 			>
-				<div className='relative z-10 w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 md:mt-20'>
-					{list.map((item, index) => {
-						return (
-							<PricingCard
-								key={index}
-								pricingItem={item}
-							/>
-						);
-					})}
-				</div>
+				<div className="relative z-10 w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 md:mt-20">
+	{list.map((item, index) => (
+		<TeamCard
+			key={index}
+			member={item}
+		/>
+	))}
+</div>
+
 			</motion.div>
 
 			<div className='hidden md:block absolute left-[50%] top-[70%] z-0'>
