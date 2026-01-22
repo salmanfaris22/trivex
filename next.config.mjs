@@ -3,8 +3,9 @@ const nextConfig = {
 	images: {
 		remotePatterns: [
 			{
-				protocol: 'https',
-				hostname: 'landingpage.huglemon.com',
+			  protocol: 'https',
+        hostname: 'landingpage.huglemon.com',
+        pathname: '/**', // ✅ IMPORTANT
 			},
 		],
 	},
