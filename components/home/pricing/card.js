@@ -8,11 +8,14 @@ export default function TeamCard({ member = {} }) {
 			
 	
 
-			<Image
-														src={member.image || '/placeholder.jpg'}
-				alt={member.name}
-				className="w-32 h-32 rounded-full object-cover border-2 border-base-content"
-									></Image>
+		<Image
+  src={member.image || '/placeholder.jpg'}
+  alt={member.name || 'Team member'}
+  width={128}
+  height={128}
+  className="rounded-full object-cover border-2 border-base-content"
+/>
+
 
 			{/* Name */}
 			<h2 className="text-xl font-bold text-center">
