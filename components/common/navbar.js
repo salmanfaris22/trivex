@@ -36,13 +36,13 @@ export default function Navbar() {
 				href={`/${langName}`}
 			>
 				<Image
-					width={200}
-					height={200}
+					width={400}
+					height={400}
 					src={'/logo.gif'}
-					className='transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
+					className='transition-all hover:scale-110   w-10 md:w-20 h-10 md:h-20'
 					alt='logo'
 				></Image>
-				<h2 className='ml-3 font-bold leading-5'>Landing Page</h2>
+				{/* <h2 className='ml-3 font-bold leading-5'>Landing Page</h2> */}
 			</a>
 
 			<ul className='w-3/5 px-5 font-medium hidden md:flex flex-nowrap items-center justify-around'>
@@ -77,7 +77,7 @@ export default function Navbar() {
 					</a>
 				</label>
 				<ThemeToggle />
-				<LangSwitch />
+				{/* <LangSwitch /> */}
 				<details className='flex md:hidden dropdown dropdown-end'>
 					<summary className='btn btn-ghost p-0'>
 						<MdMenu size={18} />
