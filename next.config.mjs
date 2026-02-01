@@ -4,13 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "landingpage.huglemon.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "huglemon.com",   // add this
-        pathname: "/**",
+        hostname: "**.huglemon.com",  // allows all subdomains
       },
     ],
   },
