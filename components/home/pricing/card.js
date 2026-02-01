@@ -9,7 +9,7 @@ export default function TeamCard({ member = {} }) {
 	
 
 <div className="relative w-32 h-32">
-  <img
+  <Image
     src={member.image}
     alt={member.name}
     fill
