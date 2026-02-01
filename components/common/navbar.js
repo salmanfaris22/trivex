@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { MdMenu } from 'react-icons/md';
+import { FaWhatsapp } from "react-icons/fa";
 import { SiGithub } from 'react-icons/si';
 import { useEffect, useState } from 'react';
 import ThemeToggle from './themeToggle';
@@ -71,9 +72,9 @@ export default function Navbar() {
 					<a
 						aria-label='get template source code'
 						title='get template source code'
-						href='https://github.com/huglemon/inwind-landing-page'
+						href='https://chat.whatsapp.com/BmbnASD9alZ8vPfkogTNpB'
 					>
-						<SiGithub size={14} />
+						<FaWhatsapp size={18} />
 					</a>
 				</label>
 				<ThemeToggle />

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { SiGithub } from 'react-icons/si';
 import { IoDocumentText } from 'react-icons/io5';
-
+import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 export default function Hero({ locale, CTALocale }) {
 	const [tilt, setTilt] = useState(45);
@@ -59,18 +59,19 @@ export default function Hero({ locale, CTALocale }) {
 							<a
 								title='get source code'
 								className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
-								href='https://github.com/huglemon/inwind-landing-page'
+								href='https://chat.whatsapp.com/BmbnASD9alZ8vPfkogTNpB'
 							>
-								<SiGithub />
-								{CTALocale.btn1}
+								<FaWhatsapp />
+								Join community
+								{/* {CTALocale.btn1} */}
 							</a>
-							<a
+							{/* <a
 								title='get source code'
 								className='btn btn-sm md:btn-md btn-base rounded-full'
 								href='https://huglemon.com/blog/i-open-sourced-a-saas-landing-page'
 							>
 								<IoDocumentText /> {CTALocale.btn2}
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</motion.div>

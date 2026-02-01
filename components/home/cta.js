@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { SiGithub } from 'react-icons/si';
-
+import { FaWhatsapp } from "react-icons/fa";
 export default function Cta({ locale, CTALocale }) {
 	return (
 		<section
@@ -25,9 +25,12 @@ export default function Cta({ locale, CTALocale }) {
 					<a
 						title='get source code'
 						className='mt-10 btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
-						href='#'
+						 href="https://chat.whatsapp.com/BmbnASD9alZ8vPfkogTNpB"
+  target="_blank"
+  rel="noopener noreferrer"
 					>
-						<SiGithub /> {CTALocale.btn1}
+						<FaWhatsapp /> 
+						Join community
 					</a>
 				</div>
 			</motion.div>
