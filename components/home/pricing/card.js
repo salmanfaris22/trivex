@@ -10,8 +10,8 @@ export default function TeamCard({ member = {} }) {
 
 <div className="relative w-32 h-32">
   <Image
-    src={member.image || "/placeholder.jpg"}
-    alt={member.name || "Team member"}
+    src={member.image}
+    alt={member.name}
     fill
     className="rounded-full object-cover border-2 border-base-content"
     sizes="128px"
