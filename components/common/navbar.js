@@ -40,7 +40,7 @@ export default function Navbar() {
 					width={600}
 					height={600}
 					src={'/logo.gif'}
-					className='transition-all hover:scale-110   w-10 md:w-20 h-10 md:h-20'
+					className='transition-all hover:scale-110  w-10 md:w-28 h-10 md:h-28'
 					alt='logo'
 				></Image>
 				{/* <h2 className='ml-3 font-bold leading-5'>Landing Page</h2> */}
