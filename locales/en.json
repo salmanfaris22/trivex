@@ -1,20 +1,20 @@
 {
 	"Hero": {
   "h1": "Built Different.",
-  "h2": "Traivex is where ambition meets execution — a place for people who don’t just learn, but level up."
+  "h2": "Thrivex is where ambition meets execution — a place for people who don’t just learn, but level up."
 }
 ,
 	"Feature": {
   "h2": "Not Built for Average",
-  "h3": "Traivex is where standards are higher",
+  "h3": "Thrivex is where standards are higher",
   "description1": "We value discipline over hype.",
   "description2": "We believe in results earned through effort.",
   "description3": "We build people who stand out, not fit in."
 }
 ,
 	"Pricing": {
-  "h2": "Inside Traivex",
-  "h3": "Meet the Minds Behind Traivex",
+  "h2": "Inside Thrivex",
+  "h3": "Meet the Minds Behind Thrivex",
   "description": "A focused team driven by skill, discipline, and execution.",
   "doYouLike": "Built by people who practice what they preach.",
   "follow": "Small team. Big standards."
@@ -45,11 +45,11 @@
 },
 
 "About": {
-  "h1": "About Traivex",
-  "h2": "Traivex is built on one belief — real skill creates real opportunity. We focus on discipline, growth, and execution in a world full of shortcuts.",
-  "why": "Why Traivex",
+  "h1": "About Thrivex",
+  "h2": "Thrivex is built on one belief — real skill creates real opportunity. We focus on discipline, growth, and execution in a world full of shortcuts.",
+  "why": "Why Thrivex",
   "why_content": "We don’t follow trends. We build capability. Every step is designed to help individuals think sharper, move smarter, and grow stronger.",
-  "team": "The Minds Behind Traivex",
+  "team": "The Minds Behind Thrivex",
   "team_content": "A focused team driven by learning, building, and pushing limits. We believe progress comes from consistency, not noise."
 },
 
