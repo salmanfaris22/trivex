@@ -37,8 +37,8 @@ export default function Navbar() {
 				href={`/${langName}`}
 			>
 				<Image
-					width={400}
-					height={400}
+					width={600}
+					height={600}
 					src={'/logo.gif'}
 					className='transition-all hover:scale-110   w-10 md:w-20 h-10 md:h-20'
 					alt='logo'
