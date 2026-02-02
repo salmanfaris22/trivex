@@ -37,10 +37,10 @@ export default function Navbar() {
 				href={`/${langName}`}
 			>
 				<Image
-					width={600}
-					height={600}
+					width={6000}
+					height={6000}
 					src={'/logo.gif'}
-					className='transition-all hover:scale-110  w-10 md:w-28 h-10 md:h-28'
+					className='transition-all hover:scale-110  w-10 md:w-32 h-10 md:h-32'
 					alt='logo'
 				></Image>
 				{/* <h2 className='ml-3 font-bold leading-5'>Landing Page</h2> */}
