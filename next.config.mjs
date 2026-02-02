@@ -4,14 +4,14 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.huglemon.com",  // allows all subdomains
+        hostname: "*.huglemon.com",   // ✅ correct wildcard
+      },
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",   // ✅ ImageKit
       },
     ],
-    domains: ['ik.imagekit.io'],
   },
 };
-
-
-
 
 export default nextConfig;
