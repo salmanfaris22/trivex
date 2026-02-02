@@ -87,7 +87,7 @@ export default function Hero({ locale, CTALocale }) {
 					<Image
 						width={1024}
 						height={600}
-						src={'/bg-white.png'}
+						src={'https://ik.imagekit.io/qqtxdbv4m/bg-white.png?updatedAt=1770065008261'}
 						className='hidden md:flex w-full -mt-10'
 						alt='app demo'
 					/>

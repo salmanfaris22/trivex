@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "**.huglemon.com",  // allows all subdomains
       },
     ],
+    domains: ['ik.imagekit.io'],
   },
 };
 
