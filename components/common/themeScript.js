@@ -12,7 +12,7 @@ export default function ThemeScript() {
     } else {
       // 检测系统主题偏好
       const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = prefersDarkMode ? 'business' : 'corporate';
+      const initialTheme = !prefersDarkMode ? 'business' : 'corporate';
       document.documentElement.setAttribute('data-theme', initialTheme);
       localStorage.setItem('theme', initialTheme);
     }
